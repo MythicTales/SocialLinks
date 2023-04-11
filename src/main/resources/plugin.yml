@@ -1,0 +1,18 @@
+name: SocialLink
+version: '${project.version}'
+main: it.mythictales.sociallink.SocialLink
+api-version: 1.19
+author: imEma99
+description: Share your social media account!
+
+commands:
+  discord:
+    description: "Mostra il link al server Discord"
+  tiktok:
+    description: "Mostra il link al profilo TikTok"
+  instagram:
+    description: "Mostra il link al profilo Instagram"
+  sito:
+    description: "Mostra il link al sito web"
+  forum:
+    description: "Mostra il link al forum"
