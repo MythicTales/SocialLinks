@@ -49,27 +49,27 @@ public final class SocialLink extends JavaPlugin implements Listener {
         switch (cmd.getName().toLowerCase()) {
             case "discord":
                 TextComponent message = new TextComponent( ChatColor.GREEN + "Clicca qui per il discord" );
-                message.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, config.getString("Discord") ));
+                message.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL,"http://discord.mythictales.it"));
                 player.sendMessage(message);
                 return true;
             case "tiktok":
-                TextComponent messageTK = new TextComponent( ChatColor.GREEN + "Tag TikTok - Clicca per visitare la pagina:" + config.get("TikTok") );
-                messageTK.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, config.getString("TikTokLink")));
+                TextComponent messageTK = new TextComponent( ChatColor.GREEN + "Tag @mythic_tales - Clicca per visitare la pagina:");
+                messageTK.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, "https://www.tiktok.com/@mythic_tales"));
                 player.sendMessage(messageTK);
                 return true;
             case "instagram":
-                TextComponent messageINST = new TextComponent( ChatColor.GREEN + "Tag Instagram - Clicca per visitare la pagina:" + config.get("Instagram") );
-                messageINST.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, config.getString("InstagramLink")));
+                TextComponent messageINST = new TextComponent( ChatColor.GREEN + "Tag @mcmythictales - Clicca per visitare la pagina:");
+                messageINST.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, "https://www.instagram.com/mcmythictales"));
                 player.sendMessage(messageINST);
                 return true;
             case "sito":
                 TextComponent messageWB = new TextComponent( ChatColor.GREEN + "Clicca per visitare il nostro sito:");
-                messageWB.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, config.getString("Website")));
+                messageWB.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, "https://home.mythictales.it"));
                 player.sendMessage(messageWB);
                 return true;
             case "forum":
-                TextComponent messageFOR = new TextComponent( ChatColor.GREEN + "Tag Instagram - Clicca per visitare il Forum");
-                messageFOR.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, config.getString("Forum")));
+                TextComponent messageFOR = new TextComponent( ChatColor.GREEN + "Clicca per visitare il Forum");
+                messageFOR.setClickEvent(new ClickEvent( ClickEvent.Action.OPEN_URL, "https://forum.mythictales.it/index.php"));
                 player.sendMessage(messageFOR);
                 return true;
             default:
